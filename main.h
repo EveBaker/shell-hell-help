@@ -50,6 +50,10 @@ void free_all(char **tokens, char *path, char *line, char *fullpath, int flag);
 
 /*TEST*/
 void simple_shell(void);
+int _strcmp(char *name, char *variable, unsigned int length);
+int _strncmp(char *name, char *variable, unsigned int length);
+char *_strcpy(char *dest, char *src);
+int _strlen(char *s);
 
 /* found in builtins.c */
 int hshell_exit(void);
