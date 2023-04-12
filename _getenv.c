@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 /**
  * _getenv - gets an environment variable
  * @name: environment variable to get
