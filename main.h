@@ -44,9 +44,9 @@ char *read_line(void);/* reads shell command line*/
 char **token_line(char *line);/* tokenizes delimiters*/
 void exec_line(char **args);/*execute command line*/
 int exec_builtin_cmds(char **);
-int print_env(void) /* prints enviroment variables*/
-char *strtok(char *str, const char *delim);
-
+char *_getenv(const char *name) /* prints enviroment variables*/
+char **copy_env(char **environ_copy, unsigned int environ_length) /* copys env */
+void free_all(char **tokens, char *path, char *line, char *fullpath, int flag);
 
 /*TEST*/
 void simple_shell(void);
@@ -59,3 +59,4 @@ size_t count_tokens(char **tokens);
 
 
 #endif
+
