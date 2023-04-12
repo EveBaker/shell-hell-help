@@ -44,8 +44,8 @@ char *read_line(void);/* reads shell command line*/
 char **token_line(char *line);/* tokenizes delimiters*/
 void exec_line(char **args);/*execute command line*/
 int exec_builtin_cmds(char **);
-char *_getenv(const char *name) /* prints enviroment variables*/
-char **copy_env(char **environ_copy, unsigned int environ_length) /* copys env */
+char *_getenv(const char *name); /* prints enviroment variables*/
+char **copy_env(char **environ_copy, unsigned int environ_length); /* copys env */
 void free_all(char **tokens, char *path, char *line, char *fullpath, int flag);
 
 /*TEST*/
@@ -54,6 +54,7 @@ int _strcmp(char *name, char *variable, unsigned int length);
 int _strncmp(char *name, char *variable, unsigned int length);
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
+char **tokenizer(char *str);
 
 /* found in builtins.c */
 int hshell_exit(void);
