@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 /**
  * exec_builtin_cmds - executes a builtin command
  * @user_args: array of user tokens
@@ -19,7 +19,7 @@ int exec_builtin_cmds(char **user_args)
 				case 0:
 					exit_shell();
 				case 1:
-					_print_env();
+					print_env();
 					return (1);
 				default:
 					break;
