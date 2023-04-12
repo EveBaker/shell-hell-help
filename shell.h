@@ -46,7 +46,7 @@ void exec_line(char **args);/*execute command line*/
 int exec_builtin_cmds(char **);
 char *_getenv(const char *name) /* prints enviroment variables*/
 char **copy_env(char **environ_copy, unsigned int environ_length) /* copys env */
-
+void free_all(char **tokens, char *path, char *line, char *fullpath, int flag);
 
 /*TEST*/
 void simple_shell(void);
