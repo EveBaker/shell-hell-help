@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 /**
   * read_line - function that prints $ and waits for command
   * Return: 0 is success
